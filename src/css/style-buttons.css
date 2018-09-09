@@ -1,0 +1,154 @@
+#sorts {
+  cursor: pointer;
+}
+.sort-by-heading {
+  width: 100%;
+  position: relative;
+}
+.sort-by-heading h1 {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-transform: capitalize;
+  font-size: 80px;
+  color: #010101;
+  font-family: 'Dancing Script', cursive;
+}
+.sort-by {
+  width: 236px;
+  height: 40px;
+  position: absolute;
+  right: 140px;
+  top: 40px;
+  border: 1px solid #d5d5d5;
+}
+.sort-by p {
+  display: inline;
+  margin-left: 10px;
+  line-height: 38px;
+  font-family: 'Lato', serif;
+  color: #d5d5d5;
+  font-weight: bold;
+}
+.sort-by p:nth-child(2) {
+  color:#000;
+  font-weight: bold;
+}
+.sort-by img {
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.heading {
+  font-family: 'Cantata One', serif;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  font-size: 170px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -25px;
+  color: #f6f6f6;
+}
+.load {
+  width: 330px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 100px;
+  border: 2px solid #d4d4d4;
+  font-family: TitilliumWeb-Regular;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.button-off {
+  display: none;
+}
+@media only screen and (max-width: 1290px){
+  .heading {
+    font-size: 155px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .sort-by {
+    width: 216px;
+    top: 31px;
+  }
+  .sort-by-heading h1 {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .heading {
+    font-size: 145px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .sort-by {
+    width: 196px;
+    top: 25px;
+    font-size: 14px;
+  }
+  .sort-by-heading h1 {
+    font-size: 60px;
+  }
+  .heading {
+    font-size: 125px;
+    margin-bottom: -12px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .heading {
+    font-size: 110px;
+    margin-bottom: -5px;
+  }
+  .load {
+    width: 270px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 834px) {
+    .sort-by {
+      position: initial;
+      margin: 50px auto;
+    }
+    .sort-by-heading h1 {
+      width: 150px;
+    }
+    .heading {
+      font-size: 95px;
+      margin-bottom: 2px;
+  }
+}
+@media only screen and (max-width: 765px) {
+    .heading {
+      font-size: 70px;
+      margin-bottom: 21px;
+      margin-left: 20px;
+      letter-spacing: 2px;
+  }
+  .load {
+    width: 240px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 530px) {
+   .heading {
+      display: none;
+  }
+  .load {
+      width: 220px;
+      font-size: 15px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .load {
+    width: 200px;
+    font-size: 15px;
+  }
+}

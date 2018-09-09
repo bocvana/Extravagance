@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Josefin+Sans|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122960561-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-122960561-1');
+    </script>
+    <meta name="keywords" content="haljine, haljina, svecane haljine, haljine za maturu, haljina za svadbu, dresses, dress, extravagance, elegantne, povoljno, jeftino, cena, najniza">
+    <meta name="description" content="Obucite se za svecanu priliku, haljine po najnizoj ceni i vasoj meri.">
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <meta property="og:url" content="http://extravagance.rs">
+    <meta property="og:title" content="Extravagance - haljine za svaku priliku">
+    <meta property="og:description" content="Obucite se za svečanu priliku, haljine po najnižoj ceni i vašoj meri.">
+    <meta property="og:image" content="http://extravagance.rs/img/logo-beo.png">
+    <meta name="twitter:url" content="http://extravagance.rs">
+    <meta name="twitter:title" content="Extravagance - haljine za svaku priliku">
+    <meta name="twitter:description" content="Obucite se za svečanu priliku, haljine po najnižoj ceni i vašoj meri.">
+    <meta name="twitter:image" content="http://extravagance.rs/img/logo-beo.png">
+    <title>Extravagance</title>
+</head>
+
+<body>
+    <div id="store">
+        <header>
+            <img class="logo" src="img/logo-beo.png" alt="">
+        </header>
+        <ul class="nav-menu clearfix">
+            <li>
+                <div class="numb">1</div>
+                <div class="li-text">
+                    <p class="middle-text">Odaberi model...</p>
+                </div>
+            </li>
+            <li>
+                <div class="numb">2</div>
+                <div class="li-text">
+                    <p class="middle-text">Izmeri obim grudi, kuka i struka...</p>
+                </div>
+            </li>
+            <li>
+                <div class="numb">3</div>
+                <div class="li-text">
+                    <p class="middle-text">Pošalji nam svoje mere na mail iz kontakta.</p>
+                </div>
+            </li>
+            <li>
+                <div class="numb">4</div>
+                <div class="li-text">
+                    <p class="middle-text">Ostavi nam svoju adresu i kontakt...</p>
+                </div>
+            </li>
+            <li>
+                <div class="numb">5</div>
+                <div class="li-text">
+                    <p class="middle-text">Uživaj u haljini krojenoj po tvojoj meri!</p>
+                </div>
+            </li>
+        </ul>
+        <div id="slideshow-container">
+            <img id="arrow-right" src="slider/arrow-right.png" alt="">
+            <img id="arrow-left" src="slider/arrow-right.png" alt="">
+            <div id="image-container">
+               <div class="slider-image" style="background: url('slider/1.jpg') no-repeat; background-size: cover;"></div>
+               <div class="slider-image" style="background: url('slider/2.jpg') no-repeat; background-size: cover;"></div>
+               <div class="slider-image" style="background: url('slider/3.jpg') no-repeat; background-size: cover;"></div>
+           </div>
+           <div class="slider-text">
+               <span>nova kolekcija</span>
+               <span>2018</span>
+           </div>
+        </div>
+        <div class="sort-by-heading">
+            <h1>haljine</h1>
+            <div class="sort-by">
+                <p>Sortiraj</p>
+                <p id="sortText">Najniža cena</p>
+                <img id="sorts" src="img/arrow.png" alt="">
+            </div>
+            <h2 class="heading">my store</h2>
+        </div>
+
+        <section id="article-container" class="store clearfix"></section>
+        <div id="load-more" class="load">učitaj više</div>
+        <footer class="clearfix">
+                <div class="line"></div>
+                <div class="contact-info">
+                    <div class="contact-info-bkg">
+                        <div class="contact-content clearfix">
+                            <div class="contact-box left">
+                                <span class="footer-logo">extravagance</span>
+                            </div>
+                            <div class="contact-box right">
+                                <span>kontakt</span>
+                                <span>dresses@extravagance.rs</span>
+                                <span>063 283 908</span>
+                            </div>
+                            <div class="contact-box right">
+                                <span>društvene mreže</span>
+                                <a href="https://www.facebook.com/extravagancedresses/" target="blank"><img src="img/facebook.png" alt=""></a>
+                                <a href="https://www.instagram.com/extravagancedresses/" target="blank"><img src="img/insta.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="allRights">&copy; 2018 / Extravagance. All Rights Reserved. Produced by <span class="pink-color">Bojana Đokić</span></div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <div id="unblock-bkg" class="unblock-bkg">
+        <div id="pop-up" class="pop-up">
+            <div id="popup-img" class="popup-img">
+            </div>
+            <img id="close-popUp" src="img/close.png" alt="">
+            <span id="title-article"></span>
+            <span id="article-description"></span>
+            <span>cena</span>
+            <span id="price"></span>
+            <div id="article-id"></div>
+            <div id="next-page-button" class="next-page-button">Detaljnije</div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    let productSelect = document.getElementsByClassName('article-content');
+    let popUp = document.getElementById('pop-up');
+    let popUpImg = document.getElementById('popup-img');
+    let store = document.getElementById('store');
+    let blockBkg = document.getElementById('unblock-bkg');
+    let noScroll = document.body;
+    let titlePopUp = document.getElementById("title-article");
+    let pricePopUp = document.getElementById("price");
+    let sortPrice = document.getElementById('sorts');
+    let sortText = document.getElementById('sortText');
+    let descPopUp = document.getElementById('article-description');
+    let nextPageButton = document.getElementById('next-page-button');
+    let articleContainer = document.getElementById('article-container');
+    let closePopUp = document.getElementById('close-popUp');
+    let loadMore = document.getElementById('load-more');
+    let articleId = document.getElementById('article-id');
+    let pathTitle = '';
+    let numArticlePerPage = 4;
+    
+
+    function loadMoreArticles () {
+        let rest = dresses.length % 4;
+        if (numArticlePerPage < dresses.length) {
+            numArticlePerPage == dresses.length - rest ? numArticlePerPage += rest : numArticlePerPage += 4;
+            articleContainer.innerHTML = "";
+            createArticle(numArticlePerPage);
+            addListenerOnArticle();
+        }
+        if (numArticlePerPage == dresses.length) {
+            loadMore.classList.add('button-off');
+        }
+    }
+
+    loadMore.addEventListener("click", function(){
+        loadMoreArticles();
+    });
+
+    closePopUp.addEventListener("click", function () {
+        popUp.classList.remove('active');
+        store.classList.remove('blur');
+        blockBkg.classList.remove('block-bkg');
+        noScroll.classList.remove("no-scroll");
+    });
+
+    sortPrice.addEventListener("click", function () {
+        sortPrice.classList.toggle('rotate');
+
+        if (sortPrice.classList.contains("rotate")) {
+            sortText.innerHTML = "Najviša cena";
+            dresses.sort(function (a, b) {
+                return a.price - b.price;
+            });
+            articleContainer.innerHTML = "";
+            createArticle(numArticlePerPage);
+            addListenerOnArticle();
+        }
+        else {
+            sortText.innerHTML = "Najniža cena";
+            dresses.sort(function (a, b) {
+                return b.price - a.price;
+            });
+            articleContainer.innerHTML = "";
+            createArticle(numArticlePerPage);
+            addListenerOnArticle();
+        }
+    });
+    var dresses = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': './src/dresses.json',
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+    })();
+
+    function createArticle(numberOfArticle) {
+        for (let i = 0; i < numberOfArticle; i++) {
+            let article = document.createElement('article');
+            article.innerHTML = `
+            <div class="article-content">
+                <img src="img/${dresses[i].img[0]}" alt="">
+                <span>${dresses[i].name}</span>
+                <span>${dresses[i].price} RSD</span>
+            </div>`;
+            articleContainer.appendChild(article);
+        };
+    };
+
+    function addListenerOnArticle () {
+        for (let i = 0; i < productSelect.length; i++) {
+            productSelect[i].addEventListener("click", function () {
+                let getImage = dresses[i].img[0];
+                let getTitle = dresses[i].name;
+                let getPrice = dresses[i].price;
+                let getDesc = dresses[i].description;
+                let getState = dresses[i].available;
+                let getId = dresses[i].id;
+            
+                popUp.classList.add('active');
+                store.classList.add('blur');
+                blockBkg.classList.add('block-bkg');
+                noScroll.classList.add('no-scroll');
+                popUpImg.style = `background: url('img/${getImage}'); background-size: cover;`;
+                titlePopUp.innerText = getTitle;
+                pricePopUp.innerText = getPrice + " RSD";
+                descPopUp.innerText = getDesc.length > 560 ? getDesc.substring(0,560) + '...' : getDesc;
+                articleId.innerHTML = getId;
+                pathTitle = getTitle.replace(/\s/g,'-').toLowerCase();
+            });
+        };
+    };
+
+    nextPageButton.addEventListener('click', function() {
+        window.open(`product.html?dress=${pathTitle}&id=${articleId.innerText}`, '_self');
+    });
+
+    createArticle(numArticlePerPage);
+    addListenerOnArticle();
+
+  let arrowRight = document.getElementById('arrow-right');
+  let arrowLeft = document.getElementById('arrow-left');
+  let imageContainer = document.getElementById('image-container');
+  let slideShowContainer = document.getElementById('slideshow-container');
+  let numOfImg = imageContainer.childElementCount;
+//   let imgWidth = 1140;
+  let imgWidth = slideShowContainer.offsetWidth;
+  let sliderPosition = 0;
+  let intervalDuration = 5000;
+  var interval = null;
+  let sliderImage = document.getElementsByClassName('slider-image');
+
+  function moveSliderToLeft(status) {
+    status === 'click' ? moveSlider(false) : null;
+    if (sliderPosition < (numOfImg - 1) * imgWidth) {
+      sliderPosition = sliderPosition + imgWidth;
+      imageContainer.setAttribute('style', `transform: translate3d(-${sliderPosition}px,0,0);`);
+    } else {
+      moveSlider(false);
+      setTimeout(function() {
+        sliderPosition = 0;
+        imageContainer.setAttribute('style', `transform: translate3d(-${sliderPosition}px,0,0);`);
+        status === 'auto' ? moveSlider(true) : null;
+      }, intervalDuration);
+    }
+  };
+  function moveSliderToRight() {
+    if (sliderPosition > 0) {
+      sliderPosition = sliderPosition - imgWidth;
+      imageContainer.setAttribute('style', `transform: translate3d(-${sliderPosition}px,0,0);`);
+    }
+  };
+
+  if (window.innerWidth - document.documentElement.clientWidth > 0 && document.documentElement.clientWidth < 1160) {
+    for (let i = 0; i < sliderImage.length; i++) {
+        sliderImage[i].style.width = `${document.documentElement.clientWidth}px`;
+    }
+  }
+
+  arrowRight.addEventListener('click', function(){
+    moveSliderToLeft('click');
+    moveSlider(false);
+  });
+  arrowLeft.addEventListener('click', function() {
+    moveSliderToRight();
+    moveSlider(false);
+  });
+  
+  function moveSlider(status) {
+    if (status) {
+      interval = setInterval(function() {
+        moveSliderToLeft('auto');
+      }, intervalDuration);
+    } else {
+      clearInterval(interval);
+    }
+  }
+
+  window.onload = moveSlider(true);
+
+</script>
+
+</html>

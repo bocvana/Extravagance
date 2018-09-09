@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Dancing+Script|Josefin+Sans|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+    <meta name="keywords" content="haljine, haljina, svecane haljine, haljine za maturu, haljina za svadbu, dresses, dress, extravagance, elegantne, povoljno, jeftino, cena, najniza">
+    <meta name="description" content="Obucite se za svecanu priliku, haljine po najnizoj ceni i vasoj meri.">
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <script src="jquery.min.js"></script>
+    <title>Products</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo-beo.png" alt=""></a>
+    </header>
+    <ul class="nav-menu clearfix">
+        <li>
+            <div class="numb">1</div>
+            <div class="li-text"><p class="middle-text">Dopada ti se baš ovaj model?</p></div>
+        </li>
+        <li>
+            <div class="numb">2</div>
+            <div class="li-text"><p class="middle-text">Dostavi nam svoje mere...</p></div>
+        </li>
+        <li>
+            <div class="numb">3</div>
+            <div class="li-text"><p class="middle-text">Kontaktiraj nas putem maila ili telefona ako imaš nedoumica...</p></div>
+        </li>
+        <li>
+            <div class="numb">4</div>
+            <div class="li-text"><p class="middle-text">Pošalji nam lični kontakt i adresu.</p></div>
+        </li>
+        <li>
+            <div class="numb">5</div>
+            <div class="li-text"><p class="middle-text">Uživaj u kreaciji!</p></div>
+        </li>
+    </ul>
+    <div class="product-container clearfix">
+        <div class="img-product">
+            <img id="img-product" alt="">
+            <img id="next-product" class="change-product" src="img/arrow-product.png" alt="">
+            <img id="previous-product" class="change-product" src="img/arrow-product.png" alt="">
+        </div>
+        <div class="info-product">
+            <h1 id="title-product"></h1>
+            <h4 class="product-detail">Detalji o proizvodu</h4>
+            <p id="product-text" class="product-text"></p>
+            <span class="subname">Dizajner: Dunja Matunović</span>
+            <span id="price-product" class="price"></span>
+            <h4 class="product-detail">informacije o dostavi</h4>
+            <p class="product-text">Za sve informacije o dostavi kontaktirajte nas na broj telefona <span class="pink-color">063 283 908</span> ili na mail <span class="pink-color">dresses@extravagance.rs</span></p>
+            <span class="product-detail none-line">društvene mreže</span>
+            <span class="social-icon"><a href="https://www.facebook.com/extravagancedresses/" target="blank"><img src="img/facebook.png" alt=""></a></span>
+            <span class="social-icon"><a href="https://www.instagram.com/extravagancedresses/" target="blank"><img src="img/insta.png" alt=""></a></span>
+
+        </div>
+    </div>
+    <footer class="clearfix">
+        <div class="line"></div>
+        <div class="contact-info">
+            <div class="contact-info-bkg">
+                <div class="contact-content clearfix">
+                    <div class="contact-box left">
+                        <span class="footer-logo">extravagance</span>
+                    </div>
+                    <div class="contact-box right">
+                        <span>kontakt</span>
+                        <span>dresses@extravagance.rs</span>
+                        <span>063 283 908</span>
+                    </div>
+                    <div class="contact-box right">
+                        <span>društvene mreže</span>
+                        <a href="https://www.facebook.com/extravagancedresses/" target="blank"><img src="img/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/extravagancedresses/" target="blank"><img src="img/insta.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="allRights">&copy; 2018 / Extravagance. All Rights Reserved. Produced by <span class="pink-color">Bojana Đokić</span></div>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+    <script>
+        let productImage = document.getElementById('img-product');
+        let productText = document.getElementById('product-text');
+        let titleProduct = document.getElementById('title-product');
+        let priceProduct = document.getElementById('price-product');
+        let nextProduct = document.getElementById('next-product');
+        let previousProduct = document.getElementById('previous-product');
+
+        let queryString = decodeURIComponent(window.location.search);
+        let params = queryString.split('&');
+        let id = params[1].replace('id=', '');
+
+        var dresses = (function () {
+            var json = null;
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': './src/dresses.json',
+                'dataType': "json",
+                'success': function (data) {
+                    json = data;
+                }
+            });
+            return json;
+        })();
+
+        productText.innerText = dresses[id].description;
+        titleProduct.innerText = dresses[id].name;
+        priceProduct.innerText = `${dresses[id].price} rsd`;
+
+        function loadImage() {
+            productImage.setAttribute('src', `img/${dresses[id].img[0]}`);
+        };
+        window.onload = loadImage();
+
+        let i = 0;
+        nextProduct.addEventListener('click', function() {
+            if (i < dresses[id].img.length - 1) {
+                i++;
+                productImage.setAttribute('src', `img/${dresses[id].img[i]}`);
+            } 
+            if (i === dresses[id].img.length - 1) {
+                nextProduct.setAttribute('style', 'display: none;');
+            }
+            if (i > 0) {
+                previousProduct.setAttribute('style', 'display: block;');                
+            }
+        });
+            if (dresses[id].img.length === 1) {
+                nextProduct.setAttribute('style', 'display: none;');
+        }
+        previousProduct.addEventListener('click', function() {
+            if (i > 0) {
+                i--;
+                productImage.setAttribute('src', `img/${dresses[id].img[i]}`);
+                previousProduct.setAttribute('style', 'display: block;');
+                nextProduct.setAttribute('style', 'display: block;');
+          }
+          if (i === 0) {
+              previousProduct.setAttribute('style', 'display: none;');
+              nextProduct.setAttribute('style', 'display: block;');
+          }
+        });
+
+    </script>
+</html>

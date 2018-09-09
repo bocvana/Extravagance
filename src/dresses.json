@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "name": "Blue conch corset and skirt",
+    "img": ["one.jpg", "first.jpg"],
+    "price": 9900,
+    "description": "Predstavljamo vam odevnu kombinaciju blue conch, za hrabre, zavodljive i ljubitelje jarkih veselih boja. Inspirisana suncem i morima ova cheer up odevna kombinacija je stvorena za sve posebne prilike u kojoj ne možete ostati neprimećeni. Corset blue conch svojom likrom odaje konture vaše linije, a u sebi ima push up korpe koje se kopčaju ispod korseta. Ručno nanizane perle, od najsitnijih do krupnijih veličina, šarenih boja i jakih kontrasta čine ovaj ručni rad unikatnim limitiranim izdanjem. Jarke žute boje na korsetu prate boju suknje od likre sa pamukom, dubokog struka koja čini ovu priču još vickastijom i zavodljivijom.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 1,
+    "name": "Rose Sapphire dress",
+    "img": ["two.jpg", "second-a.jpg", "second-b.jpg", "second-c.jpg"],
+    "price": 5900,
+    "description": "Lepršava i sjajna, zavodljiva i elegantna Rose sapphire haljina je kombinacija bele providne čipke, sa primesama nežnih rozikastih i belih šljokica. Otkrivenih leđa i dubokog šlica, ova haljina je idealna koktel varijanta, puna izazova, elegancije i hrabrosti. Bela pamučna postava ispod ove haljine stvara osećaj opuštenosti i komfornosti u jednoj provokativnoj kombinaciji, jer ne prati dužinu cele čipke, već pokriva telo samo daleko iznad kolena. Posebni rozikasti i beli ornamenti na čipki koji daju na svetlu i boje sedefa čine ovu priliku beskrajno i neponovljivo elegantnom.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 2,
+    "name": "Sparkle dress",
+    "img": ["three.jpg", "third.jpg", "third-a.jpg"],
+    "price": 4900,
+    "description": "Mala sjajna haljinica iznad kolena i golišavih leđa. Idealna clubbing kombinacija koja se kopča pozadi, a ispod ovih divnih krupnih škrgica u boji cigle i sjajne sive, nalazi se pamučna crna postava koja klizi niz telo i prati njegovu konturu. Šljokice su krupne i podsećaju na škrge sirene različitih boja, tako da kad se okrenu na jednu stranu daju tonove sive, a na drugoj strani tonove cinober boje. Ova haljinica svojim bratelama se mota oko vrata i ostavlja golišava leđa, tako da je idealna za provode kraj mora, vode i divnog mirišljavog leta, mada se uz neki lepi ogrtač može nositi i u drugim prilikama.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 3,
+    "name": "Black Madonna dress",
+    "img": ["four.jpg", "forth.jpg"],
+    "price": 9900,
+    "description": "Ova zavodljiva crna haljinica od likre i čipke je ručni rad koji je prošaran Českim kristalima raznih oblika i veličina i staklenih uskih perlica. Svaki tračak svetlosti prilikom pravljenja pokreta emituje divne odsjaje staklenih perlica i čini ovu haljinu posebnom i unikatnom. Limitirano i jedinstveno izdanje, jer za ovakvu haljinicu prilikom stvaranja mi izdvajamo minimum mesec dana nizajući perlu, po perlu, koja je posebno našivana na čipku praveći 3D efekte. Prati konture tela i svojim ukrasima i V izrezom na leđima, propraćenim cvetnim ukrasima na bordurama čipke čini ovu Black Madonnu unikatom u svakom smislu. Postava je crni pamuk sa likrom, tako da ovu divnu toaletu i sa lančićima od perlica koji padaju sa ramena možete da iznesete, a da ne osetite težinu njene elegancije i posebnosti.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 4,
+    "name": "Pink Rose",
+    "img": ["five.jpg", "five-a.jpg", "five-b.jpg"],
+    "price": 7900,
+    "description": "Predstavljamo vam sasvim neobičnu haljinicu satkanu od sitnih roze ruža. Ovaj neobični tekstil koji je sve više u trendu, kroz razne oblike i boje, čini ovu haljinicu posebnom odevnom kombinacijom za najrasprostanjenije varijante, od venčanja, do cocktail partija, zavisi samo od vašeg izbora. Korset ove haljinice u sebi ima push up korpe, tako da vam grudnjak za nju nije potreban, stoji kao salivena, a kombinacija bež pojasa i rozih nijansi je izdvajaju od mnogih haljinica, tako da morate biti primećeni gde god da se u njoj pojavite.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 5,
+    "name": "Special White dress",
+    "img": ["six.jpg", "six-a.jpg", "six-b.jpg"],
+    "price": 6900,
+    "description": "Posebna haljina, za posebnu priliku, za poseban dan, možda najposebniji u vašem životu, a možda i za neki manje poseban, tako je napravljena, da može i za jedno i za drugo, zavisi od vas. Duga bela haljina, jednostavnog kroja na V izrez, prošarana ornamentima, prošarana šljokicama i konfeticama, u ovoj haljini ćete blistati, a možete birati za koju priliku ćete je obući. Njena udobnost čini osećaj svakodnevne odevne kombinacije, ali vizuelni efekat daje potpuno drugačiji utisak.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 6,
+    "name": "White Shiny dress",
+    "img": ["seven.jpg"],
+    "price": 5900,
+    "description": "Model koji je savršen za svaku priliku. Bela haljinica zatvorenog kroja napred i otvorenih leđa čini ovu haljinicu čistom elegancijom za uobičajeni izlazak, ali i za momente gde ste vi glavni akter dešavanja. Sve je u izboru, a ornamenti koji su našiveni konfeticama, pri pomeranju ove haljinice daju poseban sjaj i romantičnu eleganciju.",
+    "available": "dostupno na stanju"
+  },
+  {
+    "id": 7,
+    "name": "Luxurian Romantic dress",
+    "img": ["eight.jpg", "eight-a.jpg"],
+    "price": 22000,
+    "description": "Duga, predivna bež haljina, dugog plašta koji se deli u dva dela. Prvi deo haljine koji ide uz telo je napravljen od pamuka sa likrom, a presvučena je prelepim bež tonom od Armanijeve čipke... Fascinirajuća i duga, bogata materijalom i teksturom, ukrašena je prelepom imitacijom bisera, kao i češkim kristalima od stakla i svaka perla je nanizana jedna po jedna. Unikatna i upadljiva, ovu haljinu preporučujemo za venčanje, maturu ili crveni tepih.",
+    "available": "dostupno na stanju"
+  }
+]

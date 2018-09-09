@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+#slideshow-container {
+  width: 1140px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#image-container {
+  width: max-content;
+  width: -o-max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  height: 544px;
+  transition: transform 0.4s ease;
+}
+#arrow-right {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -20px;
+  z-index: 2;
+  cursor: pointer;
+}
+#arrow-left {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -20px;
+  z-index: 2;
+  transform: scaleX(-1);
+  cursor: pointer;
+}
+.slider-image {
+  margin: 0;
+  padding: 0;
+  float: left;
+  height: 100%;
+  width: 1140px;
+  background-size: cover;
+}
+.slider-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 20%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 28px;
+    font-family: TitilliumWeb-Light;
+    background-color: rgb(254, 95, 117);
+    padding: 18% 55px;
+    box-sizing: border-box;
+}
+.slider-text span {
+  display: block;
+}
+.slider-text span:nth-child(2) {
+  color: #000;
+  font-size: 30px;
+}
+@media only screen and (max-width: 1160px) {
+  #slideshow-container {
+    width: 100%;
+  }
+  .slider-image {
+    width: calc(100vw);
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  #image-container {
+    height: 450px;
+  }
+  .slider-text {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .slider-text {
+    font-size: 23px;
+    padding: 20% 55px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .slider-text {
+    font-size: 20px;
+    padding: 25% 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #image-container {
+    height: 350px;
+  }
+  .slider-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #image-container {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #image-container {
+    height: 220px;
+  }
+  #arrow-right {
+    width: 30px;
+    margin-top: -15px;
+  }
+#arrow-left {
+  width: 30px;
+  margin-top: -15px;
+  }
+}

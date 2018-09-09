@@ -1,0 +1,245 @@
+.pop-up {
+  visibility: hidden;
+  opacity: 0;
+  width: 800px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+  background-color: #fff;
+  transition: 0.3s all ease;
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+.pop-up.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  box-shadow: 0 10px 30px 2px #bebebe;
+  border: 1px solid #e2e2e2;
+}
+.pop-up img {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.pop-up span {
+  width: 350px;
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  font-family: 'Lato', serif;
+  color: #5c4f4e;
+}
+.pop-up span:nth-child(3) {
+  top: 60px;
+  color: #fe5f75;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pop-up span:nth-child(5) {
+  top: 66%;
+  color: #fe5f75;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+.pop-up span:nth-child(6) {
+  top: 73%;
+  color: #5c4f4e;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+}
+
+.next-page-button {
+  width: 200px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', serif;
+  background-color: #fe5f75;
+  padding: 20px 0;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 #fe5f75;
+}
+.popup-img {
+  width: 400px;
+  height: 600px;
+  background: url("../../img/one.jpg");
+  background-size: cover;
+  position: relative;
+}
+.popup-img img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -28px;
+  cursor: pointer;
+}
+.popup-img img:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: unset;
+  margin-top: -28px;
+}
+.unblock-bkg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+.unblock-bkg.block-bkg {
+  position: fixed;
+} 
+#article-id {
+  display: none;
+}
+@media only screen and (max-width: 870px) {
+  .pop-up {
+    width: 670px;
+    height: 510px;
+    margin-left: -335px;
+    margin-top: -260px;
+  }
+  .popup-img {
+    width: 330px;
+    height: 510px;
+  }
+  #title-article {
+    width: 290px;
+    font-size: 16px;
+  }
+  #article-description {
+    width: 290px;
+    font-size: 14px;
+  }
+  .pop-up span:nth-child(5) {
+    width: 140px;
+    top: 72%;
+    left: 59%;
+    position: absolute;
+    font-size: 17px;
+  }
+  .pop-up span:nth-child(6) {
+    width: 140px;
+    position: absolute;
+    top: 72%;
+    left: 69%;
+    font-size: 17px;
+  }
+  .next-page-button {
+    width: 180px;
+    margin-left: 85px;
+    bottom: 40px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .pop-up {
+    width: 600px;
+    height: 450px;
+    margin-left: -300px;
+    margin-top: -225px;
+  }
+  .popup-img {
+    width: 300px;
+    height: 450px;
+  }
+  #title-article {
+    width: 240px;
+    font-size: 16px;
+  }
+  #article-description {
+    width: 240px;
+    font-size: 13px;
+  }
+  .pop-up span:nth-child(5) {
+    width: 140px;
+    top: 75%;
+    left: 57%;
+    position: absolute;
+    font-size: 15px;
+  }
+  .pop-up span:nth-child(6) {
+    width: 140px;
+    top: 75%;
+    left: 67%;
+    position: absolute;
+    font-size: 15px;
+  }
+  .next-page-button {
+    width: 150px;
+    margin-left: 75px;
+    font-size: 12px;
+    bottom: 5%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .pop-up {
+    width: 510px;
+    height: 380px;
+    margin-left: -255px;
+  }
+  .popup-img {
+    width: 250px;
+    height: 380px;
+  }
+  .pop-up img {
+    width: 25px;
+  }
+  #title-article {
+    width: 230px;
+    font-size: 14px;
+    top: 40px;
+    right: 15px;
+  }
+  #article-description {
+    width: 230px;
+    font-size: 12px;
+    top: 75px;
+    right: 15px;
+  }
+  .pop-up span:nth-child(5) {
+    top: 77%;
+    left: 54%;
+    font-size: 13px;
+  }
+  .pop-up span:nth-child(6) {
+    top: 77%;
+    left: 64%;
+    font-size: 13px;
+  }
+  .next-page-button {
+    width: 120px;
+    margin-left: 65px;
+    bottom: 2%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .pop-up {
+    display: none;
+  }
+  .no-scroll {
+    position: static;
+  }
+  #store.blur {
+    filter: none;
+  }
+  .unblock-bkg.block-bkg {
+    position: initial;
+  }
+}
+

@@ -1,0 +1,151 @@
+.store {
+  width: 1260px;
+  margin: auto;
+  position: relative;
+  top: -79px;
+}
+.store .article-content {
+  height: 100%;
+  transition: background-color 0.2s ease;
+}
+.store .article-content img {
+  width: 100%;
+}
+.store .article-content span {
+  width: 200px;
+  display: block;
+  margin: 5px auto;
+  font-family: 'Lato', serif;
+  text-align: center;
+  color: #ff90a4;
+}
+.store .article-content span:nth-child(3) {
+  color: black;
+  font-weight: bold;
+}
+article {
+  width: 295px;
+  height: 540px;
+  float: left;
+  margin-bottom: 90px;
+  cursor: pointer;
+  position: relative;
+  margin-right: -15px;
+  border: 15px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease ;
+}
+article:hover {
+  border-color: #fe5f75;
+  box-shadow: 0 40px 50px -30px #989696;
+}
+article:hover .article-content {
+  background-color: #f1f1f1;
+}
+@keyframes showingAnimation {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#article-container article {
+  opacity: 0;
+  animation-delay: 0.2s;
+  animation-name: showingAnimation;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 1280px) {
+  article {
+    width: 280px;
+  }
+  .store {
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  article {
+    width: 245px;
+    height: 470px;
+  }
+  .store {
+    width: 1080px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  article {
+    width: 230px;
+    height: 440px;
+  }
+  .store {
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+    .store {
+      width: 890px;
+    }
+    article {
+      width: 200px;
+      height: 400px;
+    }
+}
+@media only screen and (max-width: 910px) {
+  article {
+    width: 180px;
+    height: 340px;
+    font-size: 14px;
+  }
+  .store {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  article {
+    width: 160px;
+    height: 320px;
+    font-size: 14px;
+  }
+  .store {
+    width: 720px;
+  }
+  .store .article-content span {
+    width: 170px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  article {
+    width: 225px;
+    height: 410px;
+    font-size: 14px;
+  }
+  .store {
+    width: 480px;
+   }
+}
+@media only screen and (max-width: 530px) {
+  article {
+    width: 285px;
+    height: 500px;
+    font-size: 15px;
+  }
+  .store {
+    width: 320px;
+    top: 10px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  article {
+    width: 235px;
+    height: 450px;
+  }
+  .store {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 290px) {
+  article {
+    width: 225px;
+    height: 420px;
+  }
+  .store {
+    width: 253px;
+  }
+}

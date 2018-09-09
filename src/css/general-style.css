@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* position: static;  */
+  /* overflow-y:auto; */
+}
+.clearfix {
+  display: table;
+  clear: both;
+  content: " ";
+}
+#store.blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+.no-scroll {
+  overflow: hidden;
+}
+.pink-color {
+  color: #fe5f75;
+  font-family: TitilliumWeb-Regular;
+}
+
+@media only screen and (max-width: 530px) {
+  .no-scroll {
+    overflow: scroll;
+  }
+}
